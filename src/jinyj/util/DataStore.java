@@ -5,7 +5,7 @@ import java.util.List;
 
 public class DataStore {
 
-    public static Integer[] getLittleData() {
+    public static Integer[] getSmallData() {
         List<Integer> list = new ArrayList<Integer>();
         for(int i = 0; i < 10; i++) {
             double d = Math.random();
