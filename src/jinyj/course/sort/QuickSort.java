@@ -2,10 +2,11 @@ package jinyj.course.sort;
 
 import jinyj.util.DataStore;
 
+// 快排
 public class QuickSort {
 
     public static void main(String[] args) {
-        Integer[] arr = DataStore.getSmallData();
+        Integer[] arr = DataStore.getData();
         for(int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
