@@ -37,13 +37,13 @@ public class CountSort {
         return max;
     }
 
-    // 计数
+    // 计数出现频次，并累加计数得到排序索引
     public static int[] count(Integer[] arr, int max) {
         // 计数数组，容量大小为原数组的最大值+1，每个位置上的值已被默认初始化为0
         int[] countArr = new int[max + 1];
         // 辅助数组，存放排序后的数组值
         int[] helpArr = new int[arr.length];
-        // 遍历原数组，给计数数组对应位置数值+1
+        // 遍历原数组，给计数数组对应位置数值+1，得到每个数出现的次数
         for(int i = 0; i < arr.length; i++) {
             countArr[arr[i]] += 1;
         }
@@ -51,7 +51,7 @@ public class CountSort {
         for(int i = 1; i < countArr.length; i++) {
             countArr[i] += countArr[i - 1];
         }
-        // 遍历原数组，将累加和的结果作为新数组的位置索引，依次将值赋值到辅助数组
+        // 遍历原数组，将累加和的结果作为新数组的位置索引，依次将值赋值到新数组
         // 每取出一个值，就在计数数组对应位置-1
         for(int i =  0; i < arr.length; i++) {
             helpArr[countArr[arr[i]] - 1] = arr[i];
