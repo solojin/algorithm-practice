@@ -4,7 +4,7 @@ package jinyj.course.sort;
 public class RadixSort {
 
     public static void main(String[] args) {
-        Integer[] arr = {97, 45, 61, 124};
+        Integer[] arr = {97, 45, 124, 61};
         String source = "";
         for(int i = 0; i < arr.length; i++) {
             source += arr[i] + " ";
