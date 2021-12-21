@@ -22,12 +22,12 @@ public class CountSort {
 
     // 计数排序
     public static int[] sort(Integer[] arr) {
-        int max = CountSort.getMaxAndMin(arr);
+        int max = CountSort.getMax(arr);
         return CountSort.count(arr, max);
     }
 
     // 获取数组中最大值
-    public static int getMaxAndMin(Integer[] arr) {
+    public static int getMax(Integer[] arr) {
         int max = 0;
         for(int i = 0; i < arr.length; i++) {
             if(arr[i] > max) {
