@@ -1,3 +1,3 @@
-# algorithm-train
-practice algorithm problem
+# algorithm-practice
+algorithm practice library
 算法练习库
