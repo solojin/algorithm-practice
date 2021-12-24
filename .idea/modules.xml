@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/algorithm-demo.iml" filepath="$PROJECT_DIR$/algorithm-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm-practice.iml" filepath="$PROJECT_DIR$/algorithm-practice.iml" />
     </modules>
   </component>
 </project>
