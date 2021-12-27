@@ -22,7 +22,7 @@ public class MergeSort {
 
     // 归并排序
     public static void sort(Integer[] arr, int L, int R) {
-        MergeSort.sort(arr, L, R);
+        MergeSort.process(arr, L, R);
     }
 
     // 二分后合并
